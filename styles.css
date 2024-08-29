@@ -9,12 +9,25 @@ body {
 }
 
 header {
+    position: relative;
+}
+
+.header-bar {
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .ikigaixer {
-    font-size: 2.5rem;
-    margin: 20px 0;
+    font-size: 2rem;
+    margin: 0;
     text-transform: uppercase;
 }
 
@@ -28,16 +41,13 @@ header {
     font-family: 'Press Start 2P', cursive;
 }
 
-main.content {
-    padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
+.contact-info {
+    margin: 0;
+    text-align: center;
 }
 
-.introduction, .contact-info, .bio {
-    margin: 20px 0;
+.contact-info p {
+    margin: 0;
 }
 
 .contact-info a {
@@ -49,8 +59,19 @@ main.content {
     text-decoration: underline;
 }
 
+main.content {
+    padding: 80px 20px 20px; /* Padding top para dejar espacio para la barra */
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.introduction, .bio {
+    margin: 20px 0;
+}
+
 .bio {
-    margin: 20px auto;
     text-align: left;
     font-size: 1rem;
     line-height: 1.6;
@@ -74,45 +95,62 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Estilos para las figuras laterales */
-aside.side-figures {
+/* Estilos para las figuras de Creeper */
+aside.creeper-container {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 15%;
-    background-color: #000000;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    z-index: 1;
+    z-index: 10;
+    animation: creepMove 5s infinite;
 }
 
-aside.side-figures.left {
-    left: 0;
-}
-
-aside.side-figures.right {
-    right: 0;
-}
-
-.pixel-figure {
-    width: 50px;
-    height: 50px;
+.creeper-face {
+    width: 100px;
+    height: 100px;
     background-color: #00ff00;
-    background-image: linear-gradient(0deg, transparent 50%, #000000 50%), 
-                      linear-gradient(90deg, transparent 50%, #000000 50%), 
-                      linear-gradient(90deg, #00ff00 50%, transparent 50%), 
-                      linear-gradient(0deg, #00ff00 50%, transparent 50%);
-    background-size: 12px 12px;
-    animation: pulse 1.5s infinite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000000;
+}
+
+.creeper-eye {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    margin: 5px;
+}
+
+.creeper-mouth {
+    width: 40px;
+    height: 20px;
+    background-color: #000000;
+    margin-top: 10px;
+}
+
+/* Animación del Creeper */
+@keyframes creepMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Adaptaciones para pantallas pequeñas */
 @media (max-width: 768px) {
     .ikigaixer {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .bio {
@@ -120,48 +158,34 @@ aside.side-figures.right {
         padding: 0 10px;
     }
 
-    aside.side-figures {
-        width: 10%;
+    .creeper-container {
+        width: 80px;
+        height: 80px;
     }
 
-    .pixel-figure {
-        width: 40px;
-        height: 40px;
-        background-size: 10px 10px;
+    .creeper-face {
+        width: 60px;
+        height: 60px;
+    }
+
+    .creeper-eye {
+        width: 15px;
+        height: 15px;
+    }
+
+    .creeper-mouth {
+        width: 30px;
+        height: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .ikigaixer {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .bio {
         font-size: 0.8rem;
-    }
-
-    aside.side-figures {
-        width: 8%;
-    }
-
-    .pixel-figure {
-        width: 30px;
-        height: 30px;
-        background-size: 8px 8px;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
+        padding: 0 5px;
     }
 }
