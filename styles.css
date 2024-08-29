@@ -1,34 +1,61 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    background-color: #000000;
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #00ff00; /* Verde brillante */
-    margin-top: 20px;
+header {
+    padding: 20px;
 }
 
 .title {
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-.title .ikigai {
+    font-size: 3rem;
     color: #00ff00; /* Verde brillante */
+    margin: 0;
+    text-transform: uppercase;
 }
 
-.title .xer {
-    color: #ff0000; /* Rojo brillante para el estilo 'xer' */
-    font-family: 'Courier New', Courier, monospace; /* Fuente distinta para 'xer' */
+.subtitle {
+    font-size: 1.5rem;
+    color: #00ff00; /* Verde brillante */
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.introduction {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .contact-info {
     font-size: 1.2rem;
-    color: #cccccc;
-    margin-top: 20px;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #00ff00;
+    margin: 20px 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
