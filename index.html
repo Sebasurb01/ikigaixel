@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,105 @@
     <meta property="og:image" content="URL de la miniatura">
     <title>Soluciones Tecnológicas en Marketing</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #0f4a85;
+            color: #ecf0f1;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .ikigaixer {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .ikigai {
+            color: #ecf0f1;
+        }
+
+        .xer {
+            color: #27ae60;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            background-color: #000000;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        h3 {
+            color: #2a73bd;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        .contact-info {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .side-figures {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+        }
+
+        .side-figures.left {
+            left: 20px;
+        }
+
+        .side-figures.right {
+            right: 20px;
+        }
+
+        .pixel-figure {
+            width: 50px;
+            height: 50px;
+            margin: 10px 0;
+            background-color: #34495e;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +118,6 @@
     </header>
     <main class="content">
         <section class="introduction">
-           
             <div class="contact-info">
                 <p>Contacto:</p>
                 <p><a href="https://www.linkedin.com/in/sebasurb01" target="_blank">LinkedIn</a></p>
@@ -27,10 +125,13 @@
             </div>
         </section>
         <section class="bio">
+            <h3>Sobre mí</h3>
             <p>Hola, soy Sebastián Sánchez, Ingeniero en Automatización Industrial y especialista en soluciones tecnológicas en realidad aumentada, marketing, desarrollo de apps y automatización.</p>
             <h3>Introducción</h3>
             <p>• Industrial Automation Engineer • Data Scientist • Virtual Reality (VR/AR) Developer</p>
             <p>Apasionado por la tecnología, la inteligencia artificial y la realidad virtual (VR), con enfoque en el aprendizaje continuo y la innovación. Poseo habilidades en robótica, desarrollo de software, automatización, realidad virtual y marketing digital. Me considero creativo y disfruto tanto de aprender como de enseñar, trabajando en proyectos tanto individuales como en equipo. Actualmente, me especializo en el desarrollo con Python y análisis de datos, buscando integrar estas herramientas en soluciones innovadoras. Soy altamente adaptable a nuevas tecnologías y disfruto colaborando con otros en entornos de trabajo basados en el respeto y la buena comunicación.</p>
+        </section>
+        <section class="skills">
             <h3>Habilidades Técnicas</h3>
             <ul>
                 <li>Análisis de Datos y Python: Pandas, NumPy, Matplotlib, Seaborn, SQL.</li>
@@ -38,6 +139,8 @@
                 <li>Desarrollo de Software: MySQL, Java, PHP, ReactJS, Angular.</li>
                 <li>Realidad Virtual y Videojuegos: Unity, Modelado 3D.</li>
             </ul>
+        </section>
+        <section class="experience">
             <h3>Experiencia Profesional</h3>
             <p>PROELECTRICOS, Popayán — Webmaster (Agosto 2024 – Actualidad, remoto)</p>
             <ul>
@@ -46,6 +149,8 @@
                 <li>Creación y monitoreo de contenido digital.</li>
                 <li>Coordinación de campañas en redes sociales y email marketing.</li>
             </ul>
+        </section>
+        <section class="education">
             <h3>Educación</h3>
             <p>Ingeniería Automática Industrial — Universidad del Cauca (Graduación Estimada: Mayo 2025)</p>
             <h3>Educación Complementaria</h3>
@@ -56,6 +161,8 @@
                 <li>Unity Essentials Pathway — Unity, 2023</li>
                 <li>Automatización de Marketing Digital — Platzi, 2023</li>
             </ul>
+        </section>
+        <section class="languages">
             <h3>Idiomas</h3>
             <ul>
                 <li>Español: Nativo</li>
