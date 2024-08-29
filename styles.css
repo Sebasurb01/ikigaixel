@@ -1,53 +1,34 @@
-/* Estilos generales */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
+    color: white;
+    background-color: black;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+h1 {
+    font-size: 3rem;
+    color: #00ff00; /* Verde brillante */
+    margin-top: 20px;
 }
 
-header p {
-    margin: 10px 0 0;
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
-section {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
+.title .ikigai {
+    color: #00ff00; /* Verde brillante */
 }
 
-section h2 {
-    color: #333;
+.title .xer {
+    color: #ff0000; /* Rojo brillante para el estilo 'xer' */
+    font-family: 'Courier New', Courier, monospace; /* Fuente distinta para 'xer' */
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.contact-info {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-top: 20px;
 }
